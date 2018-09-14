@@ -7,16 +7,16 @@ using Microsoft.AspNetCore.Mvc;
 namespace WebApiApp.Controllers
 {
     /// <summary>
-    /// Root controller
+    /// Example application health endpoint
     /// </summary>
     [Route("")]
     [ApiController]
-    public class HomeController : ControllerBase
+    public class HealthController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("health")]
         public ActionResult<string> Get()
         {
-            return "Hello from your Kubernetes hosted service!";
+            return "OK";
         }
     }
 }

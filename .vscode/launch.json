@@ -4,14 +4,14 @@
             {
             "name": "Local Launch",
             "args": [],
-            "cwd": "${workspaceFolder}/src/Edutacity.Lovano",
+            "cwd": "${workspaceFolder}/src",
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "development",
-                "ASPNETCORE_URLS": "http://+:4201"
+                "ASPNETCORE_URLS": "http://+:4200"
             },
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {
-                "args": "http://localhost:4201/swagger",
+                "args": "http://localhost:4200",
                 "enabled": true,
                 "linux": {
                     "command": "xdg-open"
@@ -20,12 +20,12 @@
                     "command": "open"
                 },
                 "windows": {
-                    "args": "/C start http://localhost:4201/swagger",
+                    "args": "/C start http://localhost:4200",
                     "command": "cmd.exe"
                 }
             },
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/src/Edutacity.Lovano/bin/Debug/netcoreapp2.1/Edutacity.Lovano.dll",
+            "program": "${workspaceFolder}/src/bin/Debug/netcoreapp2.1/WebApiApp.dll",
             "request": "launch",
             "sourceFileMap": {
                 "/src": "${workspaceFolder}/src"
